@@ -1,0 +1,1316 @@
+/* =========================================================================
+   2010 NOSTALGIC AD-PORTAL STYLESHEET
+   "this webiste only had ads"
+   ========================================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    background-color: #0b1a30;
+    background-image: 
+        radial-gradient(#1e3c72 15%, transparent 16%),
+        radial-gradient(#2a5298 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    color: #333333;
+    line-height: 1.4;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+/* =========================================================================
+   TOP MARQUEE STRIP
+   ========================================================================= */
+.top-marquee-bar {
+    background: linear-gradient(to bottom, #ffe600, #ff9900);
+    border-bottom: 2px solid #cc0000;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.badge-new {
+    background: #cc0000;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 11px;
+    font-family: 'Impact', Arial, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    margin-right: 10px;
+    white-space: nowrap;
+    animation: flashBadge 0.8s infinite alternate;
+}
+
+@keyframes flashBadge {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.7; transform: scale(1.05); }
+}
+
+/* =========================================================================
+   RETRO HEADER & 2010 NAVIGATION
+   ========================================================================= */
+.retro-header {
+    background: linear-gradient(to bottom, #2b5797 0%, #1e395b 50%, #14263d 100%);
+    border-bottom: 3px solid #ffcc00;
+    padding: 15px 20px 0 20px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 12px;
+}
+
+.logo-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #ffff00;
+    text-shadow: 
+        2px 2px 0px #ff0000,
+        4px 4px 0px #000000;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 11px;
+    color: #cce0ff;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 4px;
+}
+
+.ad-counter-box {
+    background: #000000;
+    border: 3px inset #ffcc00;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+.counter-label {
+    font-size: 10px;
+    color: #ff9900;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.counter-number {
+    font-family: 'Courier New', monospace;
+    font-size: 32px;
+    font-weight: 900;
+    color: #00ff00;
+    text-shadow: 0 0 8px #00ff00;
+}
+
+.counter-sub {
+    font-size: 9px;
+    color: #aaaaaa;
+}
+
+/* 2010 Tabs Navigation */
+.retro-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.nav-item {
+    background: linear-gradient(to bottom, #f0f4fc 0%, #c8d8f0 50%, #9cb8e0 100%);
+    color: #002266;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 14px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #7090c0;
+    border-bottom: none;
+    box-shadow: inset 0 1px 0 #ffffff;
+    transition: all 0.15s ease;
+}
+
+.nav-item:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #e0eeff 50%, #b8d4f8 100%);
+    color: #cc0000;
+    transform: translateY(-2px);
+}
+
+.nav-danger {
+    background: linear-gradient(to bottom, #ff6666 0%, #cc0000 50%, #990000 100%) !important;
+    color: #ffffff !important;
+    border-color: #660000 !important;
+    animation: blinkNav 1s infinite alternate;
+}
+
+@keyframes blinkNav {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.3); }
+}
+
+/* =========================================================================
+   LEADERBOARD AD 728x90
+   ========================================================================= */
+.ad-container-leaderboard {
+    display: flex;
+    justify-content: center;
+    padding: 12px 10px;
+}
+
+.ad-banner-728x90 {
+    width: 728px;
+    height: 90px;
+    background: linear-gradient(to bottom, #ffffcc, #ffe066);
+    border: 2px dashed #ff0000;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 15px;
+}
+
+.ad-disclaimer {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 9px;
+    color: #888888;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.ad-content-leaderboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ad-badge-pulse {
+    background: #ff0000;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Impact, sans-serif;
+    padding: 4px 8px;
+    border-radius: 4px;
+    animation: pulseBadge 0.6s infinite alternate;
+    box-shadow: 0 0 8px #ff0000;
+}
+
+@keyframes pulseBadge {
+    0% { transform: scale(0.95); background: #ff0000; }
+    100% { transform: scale(1.1); background: #ff3300; }
+}
+
+.ad-text-large {
+    font-size: 14px;
+    color: #000000;
+}
+
+.highlight-yellow {
+    background: #ff0000;
+    color: #ffffff;
+    padding: 1px 4px;
+}
+
+.ad-device-preview {
+    font-weight: bold;
+    font-size: 14px;
+    color: #003399;
+    background: #ffffff;
+    border: 1px solid #999;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+/* =========================================================================
+   PORTAL 3-COLUMN LAYOUT
+   ========================================================================= */
+.portal-wrapper {
+    max-width: 1240px;
+    margin: 10px auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: 14px;
+}
+
+/* Skyscraper Columns */
+.skyscraper-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ad-banner-160x600 {
+    width: 160px;
+    min-height: 500px;
+    background: #ffffff;
+    border: 2px solid #0066cc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative;
+    padding: 20px 8px 10px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fake-ad-skinny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.ad-header-warning {
+    background: #ffcc00;
+    color: #990000;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px;
+    border: 1px solid #cc0000;
+    width: 100%;
+}
+
+.ad-cleaner-icon {
+    font-size: 40px;
+}
+
+.pc-rating {
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Flash Monkey Game */
+.ad-game-box {
+    background: linear-gradient(to bottom, #d4f7ff, #7bd1e6);
+    border: 2px dashed #008800;
+}
+
+.monkey-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.game-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #cc0000;
+    font-family: Impact, sans-serif;
+}
+
+.target-area {
+    width: 130px;
+    height: 100px;
+    background: #ffffcc;
+    border: 2px inset #999;
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.monkey-target {
+    font-size: 32px;
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    user-select: none;
+    transition: transform 0.1s ease;
+    animation: bounceTarget 0.8s infinite alternate;
+}
+
+@keyframes bounceTarget {
+    0% { transform: translateY(-10px) rotate(-5deg); }
+    100% { transform: translateY(15px) rotate(5deg); }
+}
+
+.game-score {
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Stacked Ads */
+.ad-box-stacked {
+    width: 160px;
+    background: #fbfbfb;
+    border: 1px solid #999999;
+    padding: 16px 8px 10px 8px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.ram-ad {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ram-chip {
+    font-size: 16px;
+    font-weight: bold;
+    background: #003366;
+    color: #00ffcc;
+    padding: 6px;
+    border: 1px solid #00ffcc;
+    font-family: 'Courier New', monospace;
+}
+
+.ram-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.ram-desc {
+    font-size: 11px;
+    color: #555;
+}
+
+/* IQ Test Ad */
+.iq-test-theme {
+    background: #fff;
+}
+
+.iq-badge {
+    background: #002244;
+    color: #fff;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.iq-question {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.iq-shapes {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.iq-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.iq-sub {
+    font-size: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Smiley Ad */
+.smiley-ad {
+    background: #fff0f5;
+    border-color: #ff69b4;
+}
+
+.smiley-header {
+    font-size: 11px;
+    font-weight: bold;
+    color: #d10068;
+}
+
+.smiley-icons {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 6px 0;
+}
+
+/* =========================================================================
+   CENTER MAIN CONTENT: PURE AD OVERLOAD
+   ========================================================================= */
+.main-content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-box {
+    background: #ffffff;
+    border: 1px solid #b8c7d9;
+    padding: 12px 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.alert-yellow {
+    background: #fffbcc;
+    border: 2px solid #e6db55;
+    color: #665200;
+    font-size: 13px;
+}
+
+/* =========================================================================
+   THE 4 FAKE DOWNLOAD BUTTONS TRAP (CLASSIC 2010)
+   ========================================================================= */
+.download-trap-box {
+    background: #ffffff;
+    border: 2px solid #2a65a0;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.trap-header {
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.trap-header code {
+    background: #eef3f8;
+    color: #b30000;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: 1px solid #d0dbe5;
+}
+
+.trap-buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.trap-button-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fake-ad-tag {
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #777777;
+    font-size: 9px;
+    padding: 0 4px;
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.trap-note {
+    text-align: center;
+    margin-top: 12px;
+    color: #666666;
+}
+
+/* =========================================================================
+   2010 GLOSSY SKEUOMORPHIC BUTTONS
+   ========================================================================= */
+.glossy-btn {
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.7),
+        0 2px 4px rgba(0,0,0,0.25);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.1s ease;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.glossy-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.9),
+        0 3px 6px rgba(0,0,0,0.35);
+}
+
+.glossy-btn:active {
+    transform: translateY(1px);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.btn-green {
+    background: linear-gradient(to bottom, #8ee346 0%, #5cb811 49%, #449d06 50%, #55a80e 100%);
+    border-color: #3b7e09;
+    color: #ffffff;
+}
+
+.btn-blue {
+    background: linear-gradient(to bottom, #6db3f2 0%, #3583d4 49%, #1e62ba 50%, #2974cc 100%);
+    border-color: #174b8f;
+    color: #ffffff;
+}
+
+.btn-orange {
+    background: linear-gradient(to bottom, #ffaf46 0%, #e65c00 49%, #cc4400 50%, #e65100 100%);
+    border-color: #a33800;
+    color: #ffffff;
+}
+
+.btn-red {
+    background: linear-gradient(to bottom, #f86e6e 0%, #d81c1c 49%, #b50b0b 50%, #cf1515 100%);
+    border-color: #8c0909;
+    color: #ffffff;
+}
+
+.btn-yellow {
+    background: linear-gradient(to bottom, #ffff66 0%, #ffd700 49%, #e6b800 50%, #ffcc00 100%);
+    border-color: #b38600;
+    color: #332200;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.btn-pink {
+    background: linear-gradient(to bottom, #ff99cc 0%, #ff3399 49%, #cc0066 50%, #e60073 100%);
+    border-color: #99004d;
+    color: #ffffff;
+}
+
+.btn-purple {
+    background: linear-gradient(to bottom, #c084fc 0%, #9333ea 49%, #7e22ce 50%, #6b21a8 100%);
+    border-color: #581c87;
+    color: #ffffff;
+}
+
+.btn-gold {
+    background: linear-gradient(to bottom, #fff3a1 0%, #facc15 49%, #ca8a04 50%, #eab308 100%);
+    border-color: #854d0e;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.btn-gray {
+    background: linear-gradient(to bottom, #f2f2f2 0%, #d9d9d9 49%, #c4c4c4 50%, #d4d4d4 100%);
+    border-color: #8c8c8c;
+    color: #333333;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.btn-huge {
+    padding: 14px 20px;
+    font-size: 17px;
+}
+
+.btn-large {
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 11px;
+}
+
+.btn-subtext {
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-top: 3px;
+}
+
+.blink-btn {
+    animation: blinkBorder 0.7s infinite alternate;
+}
+
+@keyframes blinkBorder {
+    0% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
+    100% { border-color: #00ff00; box-shadow: 0 0 14px #00ff00; }
+}
+
+/* =========================================================================
+   300x250 RECTANGLE AD SECTION
+   ========================================================================= */
+.ad-mid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.ad-banner-300x250 {
+    flex: 1;
+    min-height: 250px;
+    background: #ffffff;
+    border: 2px solid #ff6600;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    position: relative;
+    padding: 20px 14px 14px 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.ad-label-red {
+    background: #cc0000;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Impact, sans-serif;
+    padding: 2px 8px;
+    border-radius: 2px;
+}
+
+.ad-photo-wrap {
+    width: 140px;
+    height: 90px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+.fake-photo {
+    font-size: 38px;
+}
+
+.ad-catchy-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Dating theme */
+.ad-dating-theme {
+    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+}
+
+.ad-heart {
+    font-size: 24px;
+    animation: heartThrob 0.6s infinite alternate;
+}
+
+@keyframes heartThrob {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}
+
+.ad-dating-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d10068;
+}
+
+.ad-dating-desc {
+    font-size: 11px;
+    color: #444;
+}
+
+.profile-card {
+    background: #ffffff;
+    border: 1px dashed #ff1493;
+    padding: 6px;
+    font-size: 11px;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.status-online {
+    color: #00cc00;
+    font-weight: bold;
+    display: block;
+    font-size: 10px;
+}
+
+/* =========================================================================
+   INTERACTIVE LUCKY WHEEL AD
+   ========================================================================= */
+.lucky-wheel-ad {
+    background: linear-gradient(to bottom, #112233, #0a1520);
+    border: 3px solid #ffcc00;
+    border-radius: 6px;
+    padding: 16px;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}
+
+.wheel-headline {
+    font-family: Impact, sans-serif;
+    font-size: 18px;
+    color: #ffd700;
+    text-shadow: 1px 1px 0 #000;
+    margin-bottom: 12px;
+}
+
+.wheel-interactive-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.retro-wheel {
+    width: 170px;
+    height: 170px;
+    position: relative;
+}
+
+.wheel-pointer {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #ff0000;
+    z-index: 10;
+    text-shadow: 0 0 5px #fff;
+}
+
+.wheel-face {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    background: conic-gradient(
+        #ff3b30 0deg 60deg,
+        #ff9500 60deg 120deg,
+        #ffcc00 120deg 180deg,
+        #34c759 180deg 240deg,
+        #007aff 240deg 300deg,
+        #af52de 300deg 360deg
+    );
+    transition: transform 3.5s cubic-bezier(0.15, 0.9, 0.2, 1);
+    position: relative;
+}
+
+.wheel-sector {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.wheel-sector.s1 { transform: rotate(30deg); }
+.wheel-sector.s2 { transform: rotate(90deg); }
+.wheel-sector.s3 { transform: rotate(150deg); }
+.wheel-sector.s4 { transform: rotate(210deg); }
+.wheel-sector.s5 { transform: rotate(270deg); }
+.wheel-sector.s6 { transform: rotate(330deg); }
+
+.wheel-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.spin-result-text {
+    font-size: 13px;
+    color: #00ff66;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+/* =========================================================================
+   FAKE WINDOWS 7 ANTIVIRUS SCANNER AD
+   ========================================================================= */
+.fake-antivirus-box {
+    background: #ffffff;
+    border: 2px solid #7090b0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.window-titlebar {
+    background: linear-gradient(to bottom, #dbeaf9 0%, #b8d6f3 50%, #89b7e7 100%);
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1a3c60;
+    border-bottom: 1px solid #7090b0;
+}
+
+.window-controls {
+    font-family: monospace;
+    font-size: 12px;
+    color: #444;
+}
+
+.scanner-body {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scanner-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    height: 18px;
+    background: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 15%;
+    background: linear-gradient(to bottom, #a0f070 0%, #50c020 50%, #309010 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    transition: width 0.3s ease;
+}
+
+.threat-list {
+    background: #fffafa;
+    border: 1px solid #e0c0c0;
+    padding: 8px;
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.badge-severe {
+    background: #cc0000;
+    color: #fff;
+    padding: 1px 4px;
+    font-size: 9px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.badge-high {
+    background: #ff6600;
+    color: #fff;
+    padding: 1px 4px;
+    font-size: 9px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.scanner-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* =========================================================================
+   "AROUND THE WEB" CLICKBAIT GRID (TABOOLA 2010)
+   ========================================================================= */
+.around-the-web-section {
+    background: #f7f9fa;
+    border: 1px solid #d4dee5;
+    padding: 14px;
+    border-radius: 4px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+.sponsored-by {
+    font-size: 10px;
+    color: #888888;
+    font-weight: normal;
+}
+
+.clickbait-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.clickbait-card {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.clickbait-card:hover {
+    border-color: #0066cc;
+    box-shadow: 0 2px 6px rgba(0, 102, 204, 0.2);
+    transform: translateY(-2px);
+}
+
+.clickbait-thumb {
+    height: 75px;
+    background: #eef2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    border: 1px solid #ddd;
+}
+
+.clickbait-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1a0dab;
+    line-height: 1.3;
+}
+
+.clickbait-card:hover .clickbait-text {
+    text-decoration: underline;
+}
+
+.clickbait-source {
+    font-size: 9px;
+    color: #777777;
+}
+
+/* =========================================================================
+   SPAWN MORE ADS BUTTON & DYNAMIC STREAM
+   ========================================================================= */
+.more-ads-generator {
+    text-align: center;
+    background: #fff8e1;
+    border: 2px dashed #ffa000;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.more-ads-generator p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dynamic-ad-stream {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================================================================
+   BOTTOM LEADERBOARD
+   ========================================================================= */
+.bottom-leaderboard .ad-banner-728x90 {
+    background: linear-gradient(to bottom, #ffeeee, #ffcccc);
+    border-color: #cc0000;
+    height: auto;
+    min-height: 90px;
+    padding: 10px 16px;
+}
+
+.bottom-ad-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.flash-text {
+    font-family: Impact, sans-serif;
+    font-size: 16px;
+    color: #cc0000;
+    animation: flashBadge 0.7s infinite alternate;
+}
+
+.flash-desc {
+    font-size: 12px;
+    color: #333;
+}
+
+/* =========================================================================
+   RETRO FOOTER
+   ========================================================================= */
+.retro-footer {
+    background: #091321;
+    border-top: 3px solid #ffcc00;
+    color: #8899aa;
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 60px; /* Space for bottom sticky ad */
+}
+
+.retro-footer p {
+    margin-bottom: 6px;
+}
+
+.footer-badges {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.badge-tag {
+    background: #1a2a3e;
+    color: #00ffcc;
+    border: 1px solid #2d4566;
+    padding: 3px 8px;
+    font-family: monospace;
+    font-size: 10px;
+    border-radius: 3px;
+}
+
+/* =========================================================================
+   PRANK FLOATING & STICKY ELEMENTS
+   ========================================================================= */
+/* 1. Sticky Bottom Ad with Escaping Close Button */
+.sticky-bottom-ad {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffff66 0%, #ffcc00 100%);
+    border-top: 3px solid #cc0000;
+    padding: 10px 15px;
+    z-index: 9999;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elusive-close-btn {
+    position: absolute;
+    top: -16px;
+    right: 30px;
+    background: #cc0000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #660000;
+    border-radius: 3px;
+    padding: 2px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    transition: transform 0.15s ease, left 0.15s ease, top 0.15s ease;
+    user-select: none;
+}
+
+.sticky-ad-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #000000;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sticky-ad-pulse {
+    font-family: Impact, sans-serif;
+    color: #cc0000;
+    font-size: 15px;
+    animation: flashBadge 0.6s infinite alternate;
+}
+
+/* 2. Retro Floating Pop-up Modal */
+.retro-popup-modal {
+    position: fixed;
+    top: 25%;
+    right: 5%;
+    width: 320px;
+    background: #f0f0f0;
+    border: 3px outset #0055ea;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    z-index: 10000;
+    font-family: Tahoma, Arial, sans-serif;
+    display: block;
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.popup-titlebar {
+    background: linear-gradient(to right, #0055ea, #3c8ef7);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-close-x {
+    background: #d84a38;
+    color: #ffffff;
+    border: 1px solid #882211;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.popup-body {
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.popup-avatar {
+    font-size: 40px;
+}
+
+.popup-msg h4 {
+    font-size: 14px;
+    color: #cc0000;
+    margin-bottom: 4px;
+}
+
+.popup-msg p {
+    font-size: 11px;
+    color: #333;
+}
+
+.popup-footer {
+    padding: 8px 12px;
+    background: #e4e4e4;
+    border-top: 1px solid #cccccc;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* Toast Notifications */
+.toast-container {
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 99999;
+}
+
+.prank-toast {
+    background: #ffffcc;
+    border: 2px solid #ff9900;
+    color: #333;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    animation: slideToast 0.3s ease;
+    max-width: 320px;
+}
+
+@keyframes slideToast {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1080px) {
+    .portal-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .skyscraper-column {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .ad-banner-160x600, .ad-box-stacked {
+        width: 100%;
+        max-width: 300px;
+        min-height: auto;
+    }
+    .ad-banner-728x90 {
+        width: 100%;
+        height: auto;
+    }
+    .ad-content-leaderboard {
+        flex-direction: column;
+        text-align: center;
+    }
+    .clickbait-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .trap-buttons-grid {
+        grid-template-columns: 1fr;
+    }
+    .ad-mid-section {
+        flex-direction: column;
+    }
+    .clickbait-grid {
+        grid-template-columns: 1fr;
+    }
+    .logo-title {
+        font-size: 26px;
+    }
+}
