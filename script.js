@@ -254,11 +254,19 @@ function handlePopupCancel() {
 /* -------------------------------------------------------------------------
    9. Prank Alert & Ad Trigger
    ------------------------------------------------------------------------- */
+const ADSTERRA_DIRECT_LINK = 'https://www.profitableratecpmnetwork.com/f0puazjbe?key=dd360d55dcf826bbef5abd71be3cad07';
+
 function triggerAdPrank(message) {
     incrementAdCount(4);
+    try {
+        window.open(ADSTERRA_DIRECT_LINK, '_blank');
+    } catch (e) {
+        console.log('Ad popup blocked by browser');
+    }
     alert(`[2010 SPONSOR NOTIFICATION]\n\n${message}\n\n(Total ads viewed: ${adCount})`);
     showToast("🎉 Ad engagement detected! Loading +4 sponsored slots...");
 }
+
 
 /* -------------------------------------------------------------------------
    10. "REMOVE ALL ADS [VIP]" PRANK BUTTON
