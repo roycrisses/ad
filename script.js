@@ -1,8 +1,8 @@
 /**
  * =========================================================================
- * ASTRONAUT GPT (ASTRA AI) - Interactive Cosmic Prank Chat Engine
- * =========================================================================
- */
+   2010S GEOCITIES STYLE - AD HEAVY PRANK CHAT ENGINE
+   =========================================================================
+*/
 
 const ADSTERRA_DIRECT_LINK = 'https://www.profitableratecpmnetwork.com/f0puazjbe?key=dd360d55dcf826bbef5abd71be3cad07';
 
@@ -134,7 +134,7 @@ function sendUserMessage(text) {
 /* -------------------------------------------------------------------------
    2. UI Append Message
    ------------------------------------------------------------------------- */
-function appendMessage(content, sender, isHtml = false) {
+function appendMessage(content, sender) {
     const list = document.getElementById('messagesList');
     if (!list) return;
 
@@ -147,12 +147,7 @@ function appendMessage(content, sender, isHtml = false) {
 
     const bubble = document.createElement('div');
     bubble.className = 'msg-bubble';
-
-    if (isHtml) {
-        bubble.innerHTML = content;
-    } else {
-        bubble.textContent = content;
-    }
+    bubble.textContent = content;
 
     row.appendChild(avatar);
     row.appendChild(bubble);
@@ -168,7 +163,7 @@ function showThinking(show) {
     if (!indicator) return;
 
     if (show) {
-        indicator.style.display = 'flex';
+        indicator.style.display = 'block';
         if (statusText) {
             const randomStatus = thinkingStatuses[Math.floor(Math.random() * thinkingStatuses.length)];
             statusText.textContent = randomStatus;
@@ -203,7 +198,7 @@ function triggerDirectAdPrank(message) {
     if (message) {
         // Subtle astronaut system alert
         setTimeout(() => {
-            alert(`[ASTRONAUT GPT - MISSION CONTROL]\n\n${message}\n\nOrbital relay connected.`);
+            alert('[ASTRONAUT GPT - MISSION CONTROL]\n\n' + message + '\n\nOrbital relay connected.');
         }, 100);
     }
 }
@@ -211,7 +206,7 @@ function triggerDirectAdPrank(message) {
 function showCosmicModal() {
     const modal = document.getElementById('cosmicModal');
     if (modal) {
-        modal.style.display = 'flex';
+        modal.style.display = 'block';
     }
 }
 
@@ -237,17 +232,17 @@ function toggleModelDropdown() {
 
 function selectModel(modelName) {
     toggleModelDropdown();
-    triggerDirectAdPrank(`Model switched to ${modelName}. Synchronizing satellite weights...`);
+    triggerDirectAdPrank('Model switched to ' + modelName + '. Synchronizing satellite weights...');
 }
 
 function startNewChat() {
     const list = document.getElementById('messagesList');
     if (list) list.innerHTML = '';
     const hero = document.getElementById('welcomeHero');
-    if (hero) hero.style.display = 'flex';
+    if (hero) hero.style.display = 'block';
     triggerDirectAdPrank('Initializing new Cosmic Mission Log...');
 }
 
 function switchChat(title) {
-    triggerDirectAdPrank(`Switched to orbital log: "${title}"`);
+    triggerDirectAdPrank('Switched to orbital log: "' + title + '"');
 }
